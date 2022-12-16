@@ -1,0 +1,7 @@
+.productDetail__item {
+  list-style: none;
+}
+
+.productDetail__list:nth-child(-n+11) {
+  display: none;
+}

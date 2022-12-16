@@ -5,3 +5,9 @@ export default async function getProducts() {
   const products = await response.json();
   return products;
 }
+
+export async function getProductById(id) {
+  const response = await fetch(`${API_URL}/products/${id}`);
+  const products = await response.json();
+  return products;
+}

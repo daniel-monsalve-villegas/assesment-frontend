@@ -1,10 +1,7 @@
 import propTypes from 'prop-types';
-import { useNavigate } from 'react-router-dom';
 import Timer from '../Timer';
 
 const Product = ({ products }) => {
-  const navigate = useNavigate();
-
   return (
     <div className="product__container">
       <ul className="product__list">
@@ -17,10 +14,7 @@ const Product = ({ products }) => {
                 className="product__img"
               />
               <h2 className="product__title">{product.title}</h2>
-              <Timer />
-              <button type="submit" onClick={navigate('/')}>
-                Go to detail
-              </button>
+              <Timer id={product.id} />
             </li>
           );
         })}

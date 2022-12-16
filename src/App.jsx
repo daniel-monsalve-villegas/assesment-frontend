@@ -1,15 +1,21 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, NavLink } from 'react-router-dom';
 import Home from './pages/Home';
-import Product from './pages/Product';
-import About from './pages/About';
+import Product from './components/Product/Product';
+import Detail from './components/Detail/Detail';
+import About from './components/About/About';
 import './App.css';
 
 const App = () => {
   return (
     <div className="App">
+      <nav className="navbar">
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/about">About</NavLink>
+      </nav>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/product" element={<Product />} />
+        <Route path="/product/:id" element={<Detail />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </div>
