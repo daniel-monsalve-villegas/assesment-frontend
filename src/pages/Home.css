@@ -1,0 +1,4 @@
+.home__global {
+  display: flex;
+  flex-direction: column;
+}

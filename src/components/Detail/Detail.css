@@ -1,5 +1,33 @@
+.productDetail__container {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+
+.productDetail__price {
+  font-size: 22px;
+  margin: 0 auto 2em;
+}
+
+.productDetail__desc{
+  width: 80%;
+  margin: auto;
+}
+
+.productDetail__img {
+  width: 50%;
+  margin: auto;
+}
+
 .productDetail__item {
   list-style: none;
+  margin: 0 2em;
+}
+
+.productDetail__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .productDetail__list:nth-child(-n+11) {

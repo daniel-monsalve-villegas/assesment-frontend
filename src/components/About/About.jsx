@@ -1,3 +1,5 @@
+import './About.css';
+
 const About = () => {
   return (
     <div>
@@ -9,8 +11,9 @@ const About = () => {
       <img
         src="https://64.media.tumblr.com/53e93fda178565faf63a310d10a1e2b4/c06c4963af7a559a-f7/s2048x3072/8207e9407ff6c9cf92e811a167caf66455974af3.jpg"
         alt="foto de perfil, persona con expansores en las orejas, con flequillo peinado hacia la derecha y de tez blanca"
+        className="profile__img"
       />
-      <ul>
+      <ul className="profile__list">
         <li>React</li>
         <li>Mongo DB</li>
         <li>Scrum Method</li>

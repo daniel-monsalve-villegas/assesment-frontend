@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import propTypes from 'prop-types';
+import './Timer.css';
 
 const formatTime = (time) => {
   let minutes = Math.floor(time / 60);
@@ -31,10 +32,10 @@ const TimerButton = ({ id }) => {
   }, [countdown]);
 
   return (
-    <div>
-      <h4>{formatTime(countdown)}</h4>
+    <div className="timer__container">
+      <h4 className="timer__display">{formatTime(countdown)}</h4>
       {countdown === 0 ? (
-        <button className="deatil__btn--disabled" type="submit" disabled>
+        <button className="detail__btn" type="submit" disabled>
           Go to detail
         </button>
       ) : (

@@ -1,5 +1,6 @@
 import propTypes from 'prop-types';
 import Timer from '../Timer';
+import './Product.css';
 
 const Product = ({ products }) => {
   return (
@@ -8,11 +9,13 @@ const Product = ({ products }) => {
         {products.map((product) => {
           return (
             <li key={product.id} className="product__item">
-              <img
-                src={product.image}
-                alt={product.description}
-                className="product__img"
-              />
+              <div className="product__imgContainer">
+                <img
+                  src={product.image}
+                  alt={product.description}
+                  className="product__img"
+                />
+              </div>
               <h2 className="product__title">{product.title}</h2>
               <Timer id={product.id} />
             </li>

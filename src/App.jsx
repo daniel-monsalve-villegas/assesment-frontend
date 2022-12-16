@@ -9,8 +9,12 @@ const App = () => {
   return (
     <div className="App">
       <nav className="navbar">
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/about">About</NavLink>
+        <NavLink to="/" className="navbar__link">
+          Home
+        </NavLink>
+        <NavLink to="/about" className="navbar__link">
+          About
+        </NavLink>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
